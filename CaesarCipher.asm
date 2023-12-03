@@ -2,11 +2,8 @@
 ;
              .ORIG  x3000
 ;
-MAIN         JSR PROMPT                         ; display TYPEMSG and get char
-                                                ; get encryption key
-                                                ; if char is (E) and encrypt
-                                                ; else if char is (D) then decrypt
-                                                ; print result
+MAIN         JSR PROMPT                         ; display prompts and run program
+             ; decide to loop
              AND        R0, R0, #0              ; clear R0
              LEA        R0, AGAIN               ; load start address of AGAIN in R0
              PUTS                               ; display PROMPT
