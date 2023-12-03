@@ -1,8 +1,4 @@
-; Chloe Duncan
 ; 12 March 2022
-; TCSS 372, Professor Fowler
-;
-; Routines Extra Credit : Caesar Cipher
 ;
              .ORIG  x3000
 ;
@@ -104,6 +100,5 @@ AGAIN       .STRINGZ    "\n\nGo Again [Y/N]? "
 ASCII_E     .FILL       #-69                                  ; 69 is hex for character E
 ASCII_Y     .FILL       #-89                                  ; 89 is hex for character Y
 USERSTR     .BLKW       #14                                   ; allocate space for user string (13 hex = 20 dec) ; one more space for enter char
-
 ;          
             .END
